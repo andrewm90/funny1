@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trudeau 
+  labels:
+    app: trudeau
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: trudeau
+  template:
+    metadata:
+      labels:
+        app: trudeau
+    spec:
+      containers:
+      - name: nginx
+        image: andrewm90/funny1
+        ports:
+        - containerPort: 80
