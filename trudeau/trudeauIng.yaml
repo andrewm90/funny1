@@ -10,10 +10,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - https-uselesscunt.org
+    - uselesscunt.org
     secretName: uselesscunt-tls
   rules:
-  - host: https-uselesscunt.org
+  - host: uselesscunt.org
     http:
       paths:
       - path: /
